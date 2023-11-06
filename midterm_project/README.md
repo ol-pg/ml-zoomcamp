@@ -32,6 +32,17 @@ TikTok is the leading destination for short-form mobile video. The platform is b
 | **video_comment_count**  |  float |  The total number of comments on the published video. |
 
 ## Files in repo
+|  File name |      Description       |
+|:--------:|:-----------------------------------:|
+|    **tiktok_dataset.csv**   |  Dataset for the study |
+|    **notebook.ipynb**   |  Data preparation and data cleaning; EDA, feature importance analysis; Model selection process and parameter tuning |
+|    **train.py**   |  Training the final model; Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML) |
+|    **predict.py**   |  Loading the model; Serving it via a web service (with Flask or specialized software - BentoML, KServe, etc)|
+|    **Pipfile**   |  python virtual environment management (pipenv) file with all the used packages and their versions listed (used for deployment)|
+|    **Pipfile.lock**   |  python virtual environment management(pipenv) file specifying which specific version of the packages present in `Pipfile` should be used (used for deployment)|
+|    **Dockerfile**   |  Dockerfile for running the service|
+|    **README.md**   |  The file is an essential guide that gives other developers a detailed description of your GitHub project. | 
+
 
 
 # How to run project
