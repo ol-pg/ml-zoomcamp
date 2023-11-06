@@ -3,6 +3,7 @@
 Hi there! This is my midterm project for Machine Learning Zoomcamp 2023.
 
 ![Imgur](https://www.internetmatters.org/wp-content/uploads/2019/04/Tik_Tok_logo.png)
+
 # Description
 
 TikTok is the leading destination for short-form mobile video. The platform is built to help imaginations thrive. TikTok's mission is to create a place for inclusive, joyful, and authentic content–where people can safely discover, create, and connect.
@@ -36,8 +37,10 @@ TikTok is the leading destination for short-form mobile video. The platform is b
 |:--------:|:-----------------------------------:|
 |    **tiktok_dataset.csv**   |  Dataset for the study |
 |    **notebook.ipynb**   |  Data preparation and data cleaning; EDA, feature importance analysis; Model selection process and parameter tuning |
+|    **model.bin**   |  saved model which is obtained as output of train.py |
 |    **train.py**   |  Training the final model; Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML) |
 |    **predict.py**   |  Loading the model; Serving it via a web service (with Flask or specialized software - BentoML, KServe, etc)|
+|    **predict_test.py**   |  a Python script that sends a request to the host with information about a video and returns a response that the video contains an opinion or statement |
 |    **Pipfile**   |  python virtual environment management (pipenv) file with all the used packages and their versions listed (used for deployment)|
 |    **Pipfile.lock**   |  python virtual environment management(pipenv) file specifying which specific version of the packages present in `Pipfile` should be used (used for deployment)|
 |    **Dockerfile**   |  Dockerfile for running the service|
@@ -48,24 +51,33 @@ TikTok is the leading destination for short-form mobile video. The platform is b
 # How to run project
 
 ## Starter
-Download project
-Install dependencies with pipenv install
+    1. Download repo 
+```
+git clone  https://github.com/ol-pg/ml-zoomcamp/tree/main/midterm_project
+``` 
+    2. Install dependencies with pipenv install
 
-## To run notebook.ipynb
-Activate virtual environment in directory by pipenv shell and open jupyter notebook
-Open notebook.ipynb
-Run first section 1(Table of contents ) to section 5(EDA) .
-For section 6.1 and 6.2 , you can run 6.2 first than 6.1 , but in each subsection of 6.1 and 6.2 , must run sequentially
-For section 6.2 to 9.4 , run first section between 6.2 and 6.3.No need to run sequentially in section 6.2 to 9.4 , but need to run sequentially in each section.
+If you haven't installed `pipenv` yet, you need to do it with:
+```
+pip install pipenv
+```
+Then you can recreate the environment by running the below command in the project directory:
+```
+pipenv install
+```
 
 ## To run train.py
-Activate virtual environment in directory by pipenv shell
-run python train.py , it will save model_chosen.bin in directory
+    1. Activate virtual environment in directory by pipenv shell
+    2. run python train.py , it will save model.bin in directory
 
 ## Deploy locally using docker
-run docker image using docker run -it --rm -p 9696:9696 zoomcamp-project
-run python predict-test.py on another command prompt
-Player data that specified in predict-test.py can modified if you want to try another player
+    1. run docker image using 
+```
+docker build . 
+docker tag <your_image> predict
+docker run -p 0.0.0.0:9696:9696 predict 
+``` 
+    2. run python predict-test.py on another command prompt
 
 # Contacts
 If you encounter any problem running any part of the project contact me at:
