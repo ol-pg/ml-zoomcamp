@@ -2,6 +2,7 @@
 
 Hi there! This is my midterm project for Machine Learning Zoomcamp 2023.
 
+![Imgur](https://www.internetmatters.org/wp-content/uploads/2019/04/Tik_Tok_logo.png)
 # Description
 
 TikTok is the leading destination for short-form mobile video. The platform is built to help imaginations thrive. TikTok's mission is to create a place for inclusive, joyful, and authentic content–where people can safely discover, create, and connect.
