@@ -1,1 +1,1 @@
-Проекты по курсу ML Zoomcamp 2023
+Projects for Machine Learning Zoom Camp 2023
