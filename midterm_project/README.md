@@ -77,7 +77,7 @@ docker build .
 docker tag <your_image> predict
 docker run -p 0.0.0.0:9696:9696 predict 
 ``` 
-    2. run python predict-test.py on another command prompt
+    2. run python predict_test.py on another command prompt
 
 # Contacts
 If you encounter any problem running any part of the project contact me at:
