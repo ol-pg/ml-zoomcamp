@@ -1,3 +1,5 @@
+# TikTok User Engagement Data
+
 Hi there! This is my midterm project for Machine Learning Zoomcamp 2023.
 
 # Description
@@ -7,9 +9,6 @@ TikTok is the leading destination for short-form mobile video. The platform is b
 To build a machine learning model that can determine whether a video contains a **claim or an opinion**, there are several stages and techniques that can be used. It is important to split the data into training, validation, and test sets to avoid overfitting and underfitting. Additionally, it is important to validate and verify your machine learning model outcomes to ensure that you're getting the right data and that the data is accurate. Finally, it is important to deploy your machine learning model in production and monitor it regularly to ensure that it continues to put out accurate, relevant information.
 
 The data can downloaded from [kaggle](https://www.kaggle.com/datasets/yakhyojon/tiktok/data).
-
-
-File in repository :
 
 ## About the dataset
 
@@ -28,8 +27,10 @@ TikTok is the leading destination for short-form mobile video. The platform is b
 | **video_view_count**  |  float | The total number of times the published video has been viewed. |
 | **video_like_count**  |  float | The total number of times the published video has been liked by other users. |
 | **video_share_count**  |  float | The total number of times the published video has been shared by other users. |
-| **video_download_count***  |  float | The total number of times the published video has been downloaded by other users. |
-| **video_comment_count***  |  float |  The total number of comments on the published video. |
+| **video_download_count**  |  float | The total number of times the published video has been downloaded by other users. |
+| **video_comment_count**  |  float |  The total number of comments on the published video. |
+
+## Files in repo
 
 
 # How to run project
@@ -55,3 +56,9 @@ run python predict-test.py on another command prompt
 Player data that specified in predict-test.py can modified if you want to try another player
 
 # Contacts
+If you encounter any problem running any part of the project contact me at:
+
+    - olgapogodina11@gmail.com
+
+    - tg https://t.me/ol_pg
+
