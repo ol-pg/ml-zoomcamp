@@ -2,7 +2,7 @@
 
 Hi there! This is my capstone 1 project for Machine Learning Zoomcamp 2023.
 
-![Imgur](https://www.kaggle.com/competitions/64900/images/header)
+![Imgur](header.png)
 
 # Description
 
