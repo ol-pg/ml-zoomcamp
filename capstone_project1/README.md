@@ -1,4 +1,4 @@
-# TikTok User Engagement Data
+# DTC Zoomcamp Q&A Challenge
 
 Hi there! This is my capstone 1 project for Machine Learning Zoomcamp 2023.
 
@@ -44,6 +44,7 @@ The dataset for the DataTalks.Club Q&A Matching Challenge consists of four CSV f
     4. test_answers.csv:
     **Purpose** : Provides the answers for the test set. Participants need to match these answers to the questions in test_questions.csv.
     **Columns** : Same as train_answers.csv.
+    
     5. Attachments Folder:
     **Contents** : Contains all the attachment files that are referenced in the answers. This includes images and potentially other types of files.
     **Usage** : These attachments are part of some answers and can be critical for correctly matching questions to answers, especially for questions where visual context is important.Participants are encouraged to explore and utilize the rich information available in these files, including textual content, course context, and temporal data, to develop robust models capable of accurately matching questions and answers.
@@ -53,7 +54,7 @@ The dataset for the DataTalks.Club Q&A Matching Challenge consists of four CSV f
 ## Files in repo
 |  File name |      Description       |
 |:--------:|:-----------------------------------:|
-|    **tiktok_dataset.csv**   |  Dataset for the study |
+|    **data**   |  Folder with data and attachments|
 |    **notebook.ipynb**   |  Data preparation and data cleaning; EDA, feature importance analysis; Model selection process and parameter tuning |
 |    **model.bin**   |  saved model which is obtained as output of train.py |
 |    **train.py**   |  Training the final model; Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML) |
@@ -71,7 +72,7 @@ The dataset for the DataTalks.Club Q&A Matching Challenge consists of four CSV f
 ## Starter
     1. Download repo 
 ```
-git clone  https://github.com/ol-pg/ml-zoomcamp/tree/main/midterm_project
+git clone  https://github.com/ol-pg/ml-zoomcamp/tree/main/capstone_project1
 ``` 
     2. Install dependencies with pipenv install
 
