@@ -56,12 +56,10 @@ The dataset for the DataTalks.Club Q&A Matching Challenge consists of four CSV f
 |:--------:|:-----------------------------------:|
 |    **data**   |  Folder with data and attachments|
 |    **notebook.ipynb**   |  Data preparation and data cleaning; EDA, feature importance analysis; Model selection process and parameter tuning |
-|    **model.bin**   |  saved model which is obtained as output of train.py |
 |    **train.py**   |  Training the final model; Saving it to a file (e.g. pickle) or saving it with specialized software (BentoML) |
 |    **predict.py**   |  Loading the model; Serving it via a web service (with Flask or specialized software - BentoML, KServe, etc)|
 |    **predict_test.py**   |  a Python script that sends a request to the host with information about a video and returns a response that the video contains an opinion or statement |
-|    **Pipfile**   |  python virtual environment management (pipenv) file with all the used packages and their versions listed (used for deployment)|
-|    **Pipfile.lock**   |  python virtual environment management(pipenv) file specifying which specific version of the packages present in `Pipfile` should be used (used for deployment)|
+|    **requirements.txt**   |  python virtual environment requirements |
 |    **Dockerfile**   |  Dockerfile for running the service|
 |    **README.md**   |  The file is an essential guide that gives other developers a detailed description of your GitHub project. | 
 
@@ -76,13 +74,10 @@ git clone  https://github.com/ol-pg/ml-zoomcamp/tree/main/capstone_project1
 ``` 
     2. Install dependencies with pipenv install
 
-If you haven't installed `pipenv` yet, you need to do it with:
+Install requirements:
+
 ```
-pip install pipenv
-```
-Then you can recreate the environment by running the below command in the project directory:
-```
-pipenv install
+pip install -r requirements.txt
 ```
 
 ## To run train.py
