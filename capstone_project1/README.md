@@ -93,8 +93,6 @@ docker run -p 0.0.0.0:9696:9696 predict
 ``` 
     2. run python predict_test.py on another command prompt
 
-![Imgur](execute_example.png)
-
 # Contacts
 If you encounter any problem running any part of the project contact me at:
 
